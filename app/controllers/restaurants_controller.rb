@@ -1,9 +1,9 @@
 class RestaurantsController < ApplicationController
-  before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
+  before_action :set_restaurant, only: [:show, :edit, :update, :destroy, :chef
 
   # GET '/restaurants/23/chef'
   def chef
-    @restaurant = Restaurant.find(params[:id])
+    # @restaurant = Restaurant.find(params[:id])
     @chef_of_the_resto = @restaurant.chef
   end
 
